@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    client-id: spring-kafka-demo
+    producer:
+      acks: 1
+    consumer:
+      group-id: spring-kafka-demo-consumer
+    listener:
+      concurrency: 2
+      change-consumer-thread-name: true
