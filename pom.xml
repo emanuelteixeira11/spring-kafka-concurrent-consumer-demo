@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>io.eteixeira.kafka</groupId>
-	<artifactId>spring-kafka-demo</artifactId>
+	<artifactId>spring-kafka-concurrent-consumer-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-kafka-demo</name>
-	<description>Spring Kafka :: Demo Project</description>
+	<description>Spring Kafka :: Concurrent Consumer Demo Project</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>

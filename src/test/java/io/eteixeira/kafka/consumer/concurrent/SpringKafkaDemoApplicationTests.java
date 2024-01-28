@@ -1,6 +1,6 @@
-package io.eteixeira.kafka.demo;
+package io.eteixeira.kafka.consumer.concurrent;
 
-import io.eteixeira.kafka.demo.processor.StringProcessor;
+import io.eteixeira.kafka.consumer.concurrent.processor.StringProcessor;
 import lombok.NonNull;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.assertj.core.api.Assertions;
@@ -28,7 +28,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 import java.util.stream.IntStream;
 
-import static io.eteixeira.kafka.demo.listener.SpringKafkaListener.SPRING_KAFKA_TEST_TOPIC;
+import static io.eteixeira.kafka.consumer.concurrent.listener.SpringKafkaListener.SPRING_KAFKA_TEST_TOPIC;
 
 @SpringBootTest(classes = {SpringKafkaDemoApplicationTests.TestKafkaDemoApplicationConfiguration.class, SpringKafkaDemoApplication.class})
 class SpringKafkaDemoApplicationTests {

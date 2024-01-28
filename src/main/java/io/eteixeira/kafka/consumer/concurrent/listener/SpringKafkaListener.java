@@ -1,6 +1,6 @@
-package io.eteixeira.kafka.demo.listener;
+package io.eteixeira.kafka.consumer.concurrent.listener;
 
-import io.eteixeira.kafka.demo.processor.StringProcessor;
+import io.eteixeira.kafka.consumer.concurrent.processor.StringProcessor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

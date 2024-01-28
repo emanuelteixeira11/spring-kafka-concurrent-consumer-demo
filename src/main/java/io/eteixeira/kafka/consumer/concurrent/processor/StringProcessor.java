@@ -1,4 +1,4 @@
-package io.eteixeira.kafka.demo.processor;
+package io.eteixeira.kafka.consumer.concurrent.processor;
 
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
