@@ -7,7 +7,8 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import java.util.Optional;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -36,7 +37,11 @@ public class StringProcessor {
         }
     }
 
-    public Optional<String> next() {
-       return Optional.ofNullable(this.queue.poll());
+    public int queueSize() {
+        return this.queue.size();
+    }
+
+    public Set<String> queuedData() {
+        return new HashSet<>(this.queue);
     }
 }
